@@ -14,7 +14,8 @@ Next-Generation Sequencing workflows (like WGS and WES) generate massive variant
 * **Variant Quality Score Distribution:** Density plots ensuring sequencing depth thresholds ($Q \geq 30$).
 * **Mutation Spectrum (Transitions vs. Transversions):** Bar charts showing the biological patterns of detected single-nucleotide mutations.
 * **Chromosome Density Plots:** Highlighting where mutations are heavily clustered across the genome.
-<img width="2400" height="1800" alt="ngs_variant_depth_plot" src="https://github.com/user-attachments/assets/879753de-d53f-4839-93c8-e22a4c9075e1" />
+<img width="2400" height="1800" alt="ngs_variant_density_plot" src="https://github.com/user-attachments/assets/18656ac0-9dbf-4cd4-b822-a1fba03343c3" />
+
 
 ---
 
@@ -22,13 +23,13 @@ Next-Generation Sequencing workflows (like WGS and WES) generate massive variant
 
 ### 📋 Project Overview
 In computer-aided drug design (CADD), screening hundreds of virtual compounds against a receptor protein yields massive lists of binding energies ($\Delta G$). This project visualizes binding affinities and screens for the most potent drug leads to streamline wet-lab testing.
+<img width="2700" height="1500" alt="docking_affinity_histogram" src="https://github.com/user-attachments/assets/f920416e-0637-4cc1-a843-4bed5159d100" />
 
 ### 📊 Included Visualizations:
 * **Binding Affinity Distribution:** Histograms filtering out top-performing ligands based on lower binding energy thresholds ($kcal/mol$).
 * **Ligand-Protein Interaction Heatmaps:** Matrix plots mapping out which specific amino acid residues interact strongest with each compound.
 * **Property vs. Energy Scatter Plots:** Correlation plots linking molecular weight or Lipinski's properties to docking scores.
 
---- <img width="3000" height="1800" alt="top_docking_leads_plot" src="https://github.com/user-attachments/assets/f539732d-4141-4ff1-abd6-3d7e4688723a" />
 
 
 ## 💼 Commercial Inquiries & Services
