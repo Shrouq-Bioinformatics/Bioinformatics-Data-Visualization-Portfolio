@@ -14,6 +14,7 @@ Next-Generation Sequencing workflows (like WGS and WES) generate massive variant
 * **Variant Quality Score Distribution:** Density plots ensuring sequencing depth thresholds ($Q \geq 30$).
 * **Mutation Spectrum (Transitions vs. Transversions):** Bar charts showing the biological patterns of detected single-nucleotide mutations.
 * **Chromosome Density Plots:** Highlighting where mutations are heavily clustered across the genome.
+<img width="2400" height="1800" alt="ngs_variant_depth_plot" src="https://github.com/user-attachments/assets/879753de-d53f-4839-93c8-e22a4c9075e1" />
 
 ---
 
@@ -27,7 +28,8 @@ In computer-aided drug design (CADD), screening hundreds of virtual compounds ag
 * **Ligand-Protein Interaction Heatmaps:** Matrix plots mapping out which specific amino acid residues interact strongest with each compound.
 * **Property vs. Energy Scatter Plots:** Correlation plots linking molecular weight or Lipinski's properties to docking scores.
 
----
+--- <img width="3000" height="1800" alt="top_docking_leads_plot" src="https://github.com/user-attachments/assets/f539732d-4141-4ff1-abd6-3d7e4688723a" />
+
 
 ## 💼 Commercial Inquiries & Services
 If you have raw NGS tables, VCF metrics, or molecular docking logs and need them converted into professional, presentation-ready figures for your thesis or research papers:
