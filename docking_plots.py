@@ -8,34 +8,31 @@ import seaborn as sns
 # 1. Load the molecular docking dataset
 df = pd.read_csv("docking_results.csv")
 
-# 2. Filter for top lead compounds with high affinity (Binding Affinity <= -7.5 kcal/mol)
-top_leads = df[df['Binding_Affinity_kcal_mol'] <= -7.5].sort_values(by='Binding_Affinity_kcal_mol')
-
-# 3. Set up the professional plotting environment
-plt.figure(figsize=(10, 6))
+# 2. Set up the professional plotting environment
+plt.figure(figsize=(9, 5))
 sns.set_theme(style="whitegrid")
 
-# 4. Create a specialized bar plot for top drug candidates
-docking_plot = sns.barplot(
+# 3. Create a professional Histogram with a Density Curve (KDE)
+docking_hist = sns.histplot(
+    data=df, 
     x='Binding_Affinity_kcal_mol', 
-    y='Ligand_ID', 
-    data=top_leads, 
-    palette='viridis',
-    hue='Ligand_ID',
-    legend=False
+    kde=True, 
+    color='#4a90e2', 
+    bins=6,
+    edgecolor='black'
 )
 
-# 5. Customize labels and titles for academic publication
-plt.title('Top Drug Leads Based on Molecular Docking Screening', fontsize=14, fontweight='bold', pad=15)
-plt.xlabel('Binding Affinity (kcal/mol) - Lower is Better', fontsize=12, labelpad=10)
-plt.ylabel('Ligand Identifier', fontsize=12)
+# 4. Add a scientific threshold line for top leads (e.g., <= -7.0 kcal/mol)
+plt.axvline(x=-7.0, color='#e76f51', linetype='--', linewidth=2, label='High Affinity Threshold (-7.0 kcal/mol)')
 
-# Add value labels on the bars for clarity
-for index, value in enumerate(top_leads['Binding_Affinity_kcal_mol']):
-    plt.text(value + 0.1, index, f" {value} kcal/mol", va='center', fontsize=10, fontweight='bold')
+# 5. Customize labels and titles for academic publication
+plt.title('Distribution of Binding Affinities Across Screened Ligands', fontsize=14, fontweight='bold', pad=15)
+plt.xlabel('Binding Affinity (kcal/mol) - Lower is Better', fontsize=12, labelpad=10)
+plt.ylabel('Frequency (Number of Compounds)', fontsize=12)
+plt.legend(loc='upper left')
 
 plt.tight_layout()
 
-# 6. Save the high-resolution figure for thesis or paper
-plt.savefig("top_docking_leads_plot.png", dpi=300)
-print("Molecular docking visualization generated and saved successfully as 'top_docking_leads_plot.png'!")
+# 6. Save the high-resolution histogram figure
+plt.savefig("docking_affinity_histogram.png", dpi=300)
+print("Advanced Docking Histogram generated successfully as 'docking_affinity_histogram.png'!")
