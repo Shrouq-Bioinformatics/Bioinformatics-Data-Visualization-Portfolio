@@ -23,7 +23,7 @@ docking_hist = sns.histplot(
 )
 
 # 4. Add a scientific threshold line for top leads (e.g., <= -7.0 kcal/mol)
-plt.axvline(x=-7.0, color='#e76f51', linetype='--', linewidth=2, label='High Affinity Threshold (-7.0 kcal/mol)')
+plt.axvline(x=-7.0, color='#e76f51', linestyle='--', linewidth=2, label='High Affinity Threshold (-7.0 kcal/mol)')
 
 # 5. Customize labels and titles for academic publication
 plt.title('Distribution of Binding Affinities Across Screened Ligands', fontsize=14, fontweight='bold', pad=15)
