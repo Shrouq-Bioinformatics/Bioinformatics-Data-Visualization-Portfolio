@@ -1,0 +1,16 @@
+Chromosome,Position,Variant_ID,Ref,Alt,Quality,Filter,Depth_DP,Allele_Depth_AD,Mutation_Type
+chr1,10543,rs1124,A,G,45.2,PASS,35,22,Transition
+chr1,45321,.,C,A,28.5,LowQual,12,4,Transversion
+chr2,98231,rs998,T,C,65.0,PASS,42,30,Transition
+chr3,12043,.,G,A,95.1,PASS,85,60,Transition
+chr3,55432,rs442,C,G,32.0,PASS,20,11,Transversion
+chr7,22041,rs883,A,G,102.4,PASS,110,95,Transition
+chr11,76543,.,T,A,55.8,PASS,50,28,Transition
+chr17,43210,rs551,G,T,12.4,LowQual,8,2,Transversion
+chr19,11200,rs221,A,G,88.3,PASS,90,72,Transition
+chr22,34500,.,C,T,41.2,PASS,30,18,Transition
+chrX,98500,rs774,T,G,73.6,PASS,65,48,Transversion
+chrY,15400,.,A,G,22.1,LowQual,15,5,Transition
+chr4,87431,rs101,G,A,61.0,PASS,40,25,Transition
+chr5,65432,.,C,A,18.5,LowQual,10,3,Transversion
+chr12,44321,rs303,A,G,110.5,PASS,125,102,Transition
